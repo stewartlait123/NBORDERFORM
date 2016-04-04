@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GetUserDetails {
@@ -23,7 +24,7 @@ public class GetUserDetails {
 		second_name = user_input.next();
 
 		String dob;
-		System.out.print("Enter customer D.O.B.: ");
+		System.out.print("Enter customer D.O.B. (DD/MM/YYYY): ");
 		dob = user_input.next();
 
 		String postcode;
@@ -62,7 +63,7 @@ public class GetUserDetails {
 	}
 
 	public void verifyCustomer() {
-		Customer customer = LocalDataStore.getLocalDataStore().findCustomer(
+		ArrayList<Customer> customers = LocalDataStore.getLocalDataStore().findCustomer(
 				getUserInput("first name") + " " + getUserInput("last name"), getUserInput("postcode"));
 
 		/*
@@ -70,8 +71,11 @@ public class GetUserDetails {
 		 * INITIATE REGISTRATION PROCESS
 		 */
 
-		if (customer != null) {
-			System.out.println(customer.getCustomerID());
+		if (!customers.isEmpty()) {
+			//for each Customer object which we will call 'customer' in the array customers we want to do the following
+			for(Customer customer : customers) {
+				System.out.println(customer.toString());
+			}
 		} else {
 			print("Customer not found, please register the customer.");
 			addCustomer();

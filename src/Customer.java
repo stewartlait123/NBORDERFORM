@@ -29,13 +29,24 @@ public class Customer {
 		return customerID;
 	}
 
+	public String getFull_name() {
+		return full_name;
+	}
+
+	public String getPostcode() {
+		return postcode;
+	}
+
 	@Override
+	/**
+	 * Prints out Customer: name, address and ID
+	 */
 	public String toString() {
-		return "CUSTOMER: " + full_name + ", D.O.B.: " + dob
+		return "CUSTOMER: " + full_name + ", D.O.B. : " + dob
 				+ ", ADDRESS: " + house + ", " 
 				+ addressln1 + ", " + addressln2
-				+ ", " + addressln3 + ", " + postcode + ".";
+				+ ", " + addressln3 + ", " + postcode
+				+ ", " + customerID + ".";
 	}
-	
 	
 }
