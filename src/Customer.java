@@ -43,10 +43,13 @@ public class Customer {
 	 */
 	public String toString() {
 		return "CUSTOMER: " + full_name + ", D.O.B. : " + dob
-				+ ", ADDRESS: " + house + ", " 
+				+ " ADDRESS: " + house + ", " 
 				+ addressln1 + ", " + addressln2
 				+ ", " + addressln3 + ", " + postcode
 				+ ", " + customerID + ".";
 	}
+	
+		
+	
 	
 }
