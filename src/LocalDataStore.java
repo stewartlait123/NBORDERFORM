@@ -14,7 +14,7 @@ public class LocalDataStore {
 	private LocalDataStore() {
 		addCustomer(new Customer("John Smith", "12/12/1992", "PR3P0ST", "1", "Farm Road", "Preston", "Lancashire", 1000));	
 	}
-	
+
 	/**
 	 * Adds a new customer to the arraylist of customers, incrementing the customer ID if there are already 
 	 * customers in the array, setting it to 0 if there are not.
@@ -24,9 +24,10 @@ public class LocalDataStore {
 		if (!customers.isEmpty()) {
 			Customer c = customers.get(customers.size()-1);
 			customer.setCustomerID(c.getCustomerID()+1);
-		} else
+		} else {
 			customer.setCustomerID(1);
-		customers.add(customer);
+			customers.add(customer);
+		}
 	}
 	
 	public ArrayList<Customer> findCustomer(String name) {

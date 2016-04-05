@@ -3,7 +3,7 @@
 	 * Display product price and stock value to user
 	 * 
 	 */
-public class Product {
+// public class Product {
 	
-}
+
 

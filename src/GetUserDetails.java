@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class GetUserDetails {
 	Scanner user_input;
 
@@ -51,8 +52,9 @@ public class GetUserDetails {
 
 		Customer customer = new Customer(first_name + " " + second_name, dob,
 				postcode, house, addressln1, addressln2, addressln3);
-		System.out.println(customer.toString());
+
 		LocalDataStore.getLocalDataStore().addCustomer(customer);
+		System.out.println(customer.toString());
 	}
 
 	/*
