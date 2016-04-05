@@ -1,3 +1,5 @@
+import java.util.Set;
+
 
 public class Customer {
 	private long customerID;
@@ -8,10 +10,17 @@ public class Customer {
 	private String addressln1;
 	private String addressln2;
 	private String addressln3;
+	private double balance;
 
 	public Customer(String full_name, String dob, String postcode,
 			String house, String addressln1, String addressln2,
-			String addressln3) {
+			String addressln3){
+		this(full_name, dob, postcode, house, addressln1, addressln2, addressln3, 0.00);
+	}
+	
+	public Customer(String full_name, String dob, String postcode,
+			String house, String addressln1, String addressln2,
+			String addressln3, double balance) {
 		this.full_name = full_name;
 		this.dob = dob;
 		this.postcode = postcode;
@@ -19,6 +28,7 @@ public class Customer {
 		this.addressln1 = addressln1;
 		this.addressln2 = addressln2;
 		this.addressln3 = addressln3;
+		this.balance = balance;
 	}
 	
 	public void setCustomerID(long customerID) {
@@ -37,6 +47,19 @@ public class Customer {
 		return postcode;
 	}
 
+	public void setBalance(double b){
+		balance = b;
+	}
+	
+	
+	
+		
+			
+		
+	
+	
+	
+	
 	@Override
 	/**
 	 * Prints out Customer: name, address and ID
@@ -46,7 +69,8 @@ public class Customer {
 				+ " ADDRESS: " + house + ", " 
 				+ addressln1 + ", " + addressln2
 				+ ", " + addressln3 + ", " + postcode
-				+ ", " + customerID + ".";
+				+ ". " + "CustomerID: = " + customerID
+				+ " Balance:" + balance;
 	}
 	
 		

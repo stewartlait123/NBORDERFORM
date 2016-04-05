@@ -12,7 +12,7 @@ public class LocalDataStore {
 	 * This constructor is private so that LocalDataStore can only be instanciated from within itself.
 	 */
 	private LocalDataStore() {
-		addCustomer(new Customer("John Smith", "12/12/1992", "PR3P0ST", "1", "Farm Road", "Preston", "Lancashire"));	
+		addCustomer(new Customer("John Smith", "12/12/1992", "PR3P0ST", "1", "Farm Road", "Preston", "Lancashire", 1000));	
 	}
 	
 	/**

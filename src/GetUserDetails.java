@@ -46,6 +46,8 @@ public class GetUserDetails {
 		String addressln3;
 		System.out.print("Enter cutsomer county: ");
 		addressln3 = user_input.next();
+		
+		
 
 		Customer customer = new Customer(first_name + " " + second_name, dob,
 				postcode, house, addressln1, addressln2, addressln3);
