@@ -1,3 +1,4 @@
+package ops;
 import java.util.ArrayList;
 
 /**
@@ -58,6 +59,8 @@ public class LocalDataStore {
 		
 		return results;
 	}
+	
+	
 //	
 //	public Customer findCustomer(String name, String postcode) {
 	//Checking every element in array, again

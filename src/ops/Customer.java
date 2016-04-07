@@ -1,3 +1,4 @@
+package ops;
 import java.util.Set;
 
 
@@ -49,13 +50,12 @@ public class Customer {
 
 	public void setBalance(double b){
 		balance = b;
+		
 	}
 	
-	
-	
-		
-			
-		
+	public double getBalance(){
+		return balance;
+	}
 	
 	
 	
@@ -65,12 +65,13 @@ public class Customer {
 	 * Prints out Customer: name, address and ID
 	 */
 	public String toString() {
+		CreditCheck cc=new CreditCheck();
 		return "CUSTOMER: " + full_name + ", D.O.B. : " + dob
 				+ " ADDRESS: " + house + ", " 
 				+ addressln1 + ", " + addressln2
 				+ ", " + addressln3 + ", " + postcode
 				+ ". " + "CustomerID: = " + customerID
-				+ " Balance:" + balance;
+				+ " Balance:" + String.valueOf(balance) + " : " + cc.balance(balance);
 	}
 	
 		

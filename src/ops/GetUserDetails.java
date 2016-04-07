@@ -1,5 +1,8 @@
+package ops;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 
 public class GetUserDetails {
@@ -92,5 +95,8 @@ public class GetUserDetails {
 		print("Please enter " + thingWeWant + ":");
 		return user_input.next();
 	}
+		
+
+	
 
 }
