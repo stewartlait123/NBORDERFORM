@@ -6,8 +6,27 @@ package ops;
 	 */
 
 {
-		ArrayList<Product> NBproducts = new ArrayList();{
+		
+	public void Product();{
+		String product_name;
+		print("Enter product name: ");
+		product_name = user_input.next();
+		
+		String product_quantity;
+		print("Enter product quantity: ");
+		product_quantity = user_input.next();
+		
+		String verification;
+		print("Is there anything else the customer would like to purchase?");
+		if 
+			
 	
+
+	
+	
+	ArrayList<Product> NBproducts = new ArrayList();{
+	
+			
 	
 		for (int cnt = 0; cnt <3; cnt++){
 			Product Gnome = new Product();
@@ -25,5 +44,15 @@ package ops;
 		
 		}
 
+		Product productout = new Product();
+		
+		for (int cntrx = 0; cntrx < myArrayList.size(); cntrx++){
+			productout = myArrayList.get(cntrx);
+			System.out.println(productout.getProduct());
+			
+	
+		}
+		
+		
 	}
 }
